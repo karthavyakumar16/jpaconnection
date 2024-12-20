@@ -1,0 +1,51 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+    <persistence-unit name="JpaDemo">
+        <class>com.neoteric.jpaconnection.jpademo.Project</class>
+        <class>com.neoteric.jpaconnection.jpademo.Employee</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3307/sonar"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="sonar"/>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+
+
+
+<persistence-unit name="Jpapractice">
+    <class>com.neoteric.jpaconnection.jpapractice.ProjectEntity</class>
+    <class>com.neoteric.jpaconnection.jpapractice.EmployeeEntity</class>
+    <properties>
+        <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3307/sonar"/>
+        <property name="jakarta.persistence.jdbc.user" value="root"/>
+        <property name="jakarta.persistence.jdbc.password" value="sonar"/>
+        <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+        <property name="hibernate.hbm2ddl.auto" value="update"/>
+        <property name="hibernate.show_sql" value="true"/>
+        <property name="hibernate.format_sql" value="true"/>
+    </properties>
+</persistence-unit>
+
+
+    <persistence-unit name="Jpainhertance">
+        <class>com.neoteric.jpaconnection.jpainhertance.StockEntity</class>
+        <class>com.neoteric.jpaconnection.jpainhertance.RestrictedStockEntity</class>
+        <class>com.neoteric.jpaconnection.jpainhertance.OptionalStockEntity</class>
+        <class>com.neoteric.jpaconnection.jpainhertance.FutureStocksEntity</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/stock"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="santosh"/>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+        </persistence>
